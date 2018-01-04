@@ -5,22 +5,27 @@
             <link rel="stylesheet" href="../static/styles.css">
         
             
-        </style>
+        
         <title>Sign-up</title>
     </head>
     <body>
       <!-- create your form here -->
       
-        <form method="post">
+        <form method="POST">
             <div class="grid-1">
-                <label class="item1">User name:</label>
-                <input type="text" name="username" id="usrnm" class="item2">
+                <label class="item1">Username:</label>
+                <input type="text" name="username" id="usrnm" class="item2" value="{{user}}">
+                <p class="error item10">{{user_error}}</p>
                 <label class="item3">Password:</label>
-                <input type="password" name ="password" id="psswrd" class="item4">
-                <label class="item5">Password:</label>
-                <input type="password" name ="confpassword" id="conf-psswrd" class="item6">
+                <input type="password" name ="password" id="psswrd" class="item4" value="{{password}}">
+                <p class="error item11">{{pass_error}}</p>
+                <label class="item5">Verify Password:</label>
+                <input type="password" name ="confpassword" id="conf-psswrd" class="item6" value="{{pass_val}}">
+                <p class="error item12">{{pass_val_error}}</p>
                 <label class="item7">E-mail(optional):</label>
-                <input type="text" name="mail" id="email" class="item8">
+                <input type="text" name="mail" id="email" class="item8" value="{{email}}">
+                <p class="error item13">{{email_error}}</p>
+
                 
                 <input type="submit" value="Submit" class="item9">
             </div>
