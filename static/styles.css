@@ -8,8 +8,7 @@ form {
     padding: 20px;
     margin: 0 auto;
     margin-top: 130px;
-    width: 540px;
-    height 500px;
+    width: 640px;
     font: 16px sans-serif;
     border-radius: 10px;
     border: 2px;
@@ -63,7 +62,31 @@ form {
 }
 
 .item9{
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 4;
     grid-row: 5;
+}
+
+.item10{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.item11{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.item12{
+    grid-column: 4;
+    grid-row: 3;
+}
+
+.item13{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+.error{
+    color: red;
 }
